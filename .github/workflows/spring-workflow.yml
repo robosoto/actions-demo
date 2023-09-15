@@ -41,3 +41,7 @@ jobs:
 
       - name: List files
         run: ls -la actions-demo/target
+
+      - name: deploy
+        working-directory: actions/demo/target
+        run: aws s3 cp *.jar s3://anything-really
