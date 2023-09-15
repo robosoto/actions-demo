@@ -34,7 +34,7 @@ jobs:
       - name: JDK Installation
         uses: actions/setup-java@v3.12.0
         with:
-          java-version: 8
+          java-version: '8'
 
       - name: Build project in Maven
         run: mvn -B package --file actions-demo/pom.xml
